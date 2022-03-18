@@ -2,6 +2,7 @@ import Nav from "./Components/Nav";
 import SecondNav from "./Components/SecondNav";
 import Tab from "./Components/Tab";
 import "./App.css";
+import Sidebar from "./Components/Sidebar";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Nav />
       <div className="body">
         <div className="sidebar">
-          <p>side bar</p>
+          <Sidebar />
         </div>
         <div className="body-section">
           <SecondNav />

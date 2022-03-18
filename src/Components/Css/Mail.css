@@ -1,0 +1,26 @@
+.mail {
+  display: flex;
+  vertical-align: center;
+  gap: 10px;
+
+}
+.iconmail {
+  display: flex;
+  align-items: center;
+}
+.content {
+  display: flex;
+  align-items: center;
+}
+.cover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(230, 227, 227);
+  width: 78.45vw;
+  height: 35px;
+}
+.time {
+  margin-right: 10px;
+  vertical-align: center;;
+}

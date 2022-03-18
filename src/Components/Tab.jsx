@@ -1,9 +1,10 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
+import * as React from "react";
+import PropTypes from "prop-types";
+import Tabs from "@mui/material/Tabs";
+import Tab from "@mui/material/Tab";
+import Typography from "@mui/material/Typography";
+import Box from "@mui/material/Box";
+import Mail from "./Mail";
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -34,7 +35,7 @@ TabPanel.propTypes = {
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
-    'aria-controls': `simple-tabpanel-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`,
   };
 }
 
@@ -46,22 +47,63 @@ export default function BasicTabs() {
   };
 
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example">
-          <Tab label="Primary"  {...a11yProps(0)}style={{minWidth:"20%",textTransform:"Capitalize"}} />
-          <Tab label="Social" {...a11yProps(1)} style={{minWidth:"20%",textTransform:"Capitalize", textAlign:"left"}}/>
-          <Tab label="Promotions" {...a11yProps(2)} style={{minWidth:"20%", textTransform:"Capitalize", borderBottom:"red"}} />
+    <Box sx={{ width: "100%" }}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+        <Tabs
+          value={value}
+          onChange={handleChange}
+          aria-label="basic tabs example"
+        >
+          <Tab
+            label="Primary"
+            {...a11yProps(0)}
+            style={{ minWidth: "20%", textTransform: "Capitalize" }}
+          />
+          <Tab
+            label="Social"
+            {...a11yProps(1)}
+            style={{
+              minWidth: "20%",
+              textTransform: "Capitalize",
+              textAlign: "left",
+            }}
+          />
+          <Tab
+            label="Promotions"
+            {...a11yProps(2)}
+            style={{
+              minWidth: "20%",
+              textTransform: "Capitalize",
+              borderBottom: "red",
+            }}
+          />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
-        Item One
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
       </TabPanel>
       <TabPanel value={value} index={2}>
-        Item Three
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
+        <Mail />
       </TabPanel>
     </Box>
   );

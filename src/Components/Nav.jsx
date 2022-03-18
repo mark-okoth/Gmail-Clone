@@ -1,6 +1,5 @@
 import React from "react";
 import "./Css/Nav.css";
-import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
 import SettingsIcon from "@mui/icons-material/Settings";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
@@ -19,7 +18,7 @@ function Nav() {
       <div className="container">
         <div className="logo">
           <li>
-            <a href="">
+            <a href={"/"}>
               <Tooltip title="Main Menu">
                 <MenuIcon fontSize="large" color="#000000" />
               </Tooltip>
@@ -61,10 +60,10 @@ function Nav() {
           <div className="icons">
             <ul>
               <li>
-                <a href=""></a>
+                <a href={"/"} ></a>
               </li>
               <li>
-                <a href="">
+                <a href={"/"}>
                   <Tooltip title="Support">
                     <div>
                       <HelpOutlineOutlinedIcon
@@ -83,7 +82,7 @@ function Nav() {
                 </Tooltip>
               </li>
               <li>
-                <a href="">
+                <a href={"/"}>
                   <Tooltip title="Google apps">
                     <div>
                       <AppsIcon fontSize="large" color="#000000" />
