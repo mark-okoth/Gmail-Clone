@@ -9,8 +9,9 @@ import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import InOutlinedInputput from "@mui/material/OutlinedInput";
 import InputAdornment from "@mui/material/InputAdornment";
 import FormControl from "@mui/material/FormControl";
-import TuneIcon from '@mui/icons-material/Tune';
-import Logo from './Gmail.png';
+import TuneIcon from "@mui/icons-material/Tune";
+import Logo from "./Gmail.png";
+import Tooltip from "@mui/material/Tooltip";
 
 function Nav() {
   return (
@@ -19,28 +20,38 @@ function Nav() {
         <div className="logo">
           <li>
             <a href="">
-              <MenuIcon fontSize="large" color="#000000" />
+              <Tooltip title="Main Menu">
+                <MenuIcon fontSize="large" color="#000000" />
+              </Tooltip>
             </a>
           </li>
           <li>
-           <img src={Logo} alt="" />
+            <Tooltip title="Gmail">
+              <img src={Logo} alt="" />
+            </Tooltip>
           </li>
         </div>
         <div className="search">
           <FormControl variant="standard" fullWidth>
             <InOutlinedInputput
-               InputProps={{ style: {  borderRadius: 10} }}
               id="input-with-icon-adornment"
               placeholder="Search Mail"
-
               startAdornment={
                 <InputAdornment position="start">
-                  <SearchOutlinedIcon />
-                </InputAdornment>        
+                  <Tooltip title="Search">
+                    <div>
+                    <SearchOutlinedIcon />
+                    </div>
+                  </Tooltip>
+                </InputAdornment>
               }
               endAdornment={
                 <InputAdornment position="end">
-                <TuneIcon />
+                  <Tooltip title="Show Search Options">
+                    <div>
+                      <TuneIcon />
+                    </div>
+                  </Tooltip>
                 </InputAdornment>
               }
             />
@@ -54,25 +65,42 @@ function Nav() {
               </li>
               <li>
                 <a href="">
-                  <HelpOutlineOutlinedIcon fontSize="medium" color="#000000" />
+                  <Tooltip title="Support">
+                    <div>
+                      <HelpOutlineOutlinedIcon
+                        fontSize="large"
+                        color="#000000"
+                      />
+                    </div>
+                  </Tooltip>
                 </a>
               </li>
               <li>
-                <SettingsIcon fontSize="medium" />
+                <Tooltip title="Settings">
+                  <div>
+                    <SettingsIcon title="Delete" fontSize="large" />
+                  </div>
+                </Tooltip>
               </li>
               <li>
                 <a href="">
-                  <AppsIcon fontSize="medium" color="#000000" />
+                  <Tooltip title="Google apps">
+                    <div>
+                      <AppsIcon fontSize="large" color="#000000" />
+                    </div>
+                  </Tooltip>
                 </a>
               </li>{" "}
               <li></li>
             </ul>
           </div>
           <div className="img">
-            <img
-              src="https://cdn.lifehack.org/wp-content/uploads/2014/03/shutterstock_97566446.jpg"
-              alt=""
-            />
+            <Tooltip title="Google Account John Doe John@gmail.com">
+              <img
+                src="https://cdn.lifehack.org/wp-content/uploads/2014/03/shutterstock_97566446.jpg"
+                alt=""
+              />
+            </Tooltip>
           </div>
         </div>
       </div>

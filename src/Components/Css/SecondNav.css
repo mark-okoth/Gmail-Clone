@@ -1,0 +1,31 @@
+.SecondNav{
+    display: flex;
+    align-items: center;
+    gap: 5px; ;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid  rgb(223, 220, 220);;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 25px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    color: gray;
+
+}
+.right-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    gap: 20px;
+    color: gray;
+}
