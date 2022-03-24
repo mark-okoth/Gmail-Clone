@@ -18,7 +18,7 @@ function Nav() {
       <div className="container">
         <div className="logo">
           <li>
-            <a href={"/"}>
+            <a href={"/"} alt='lint to home'>
               <Tooltip title="Main Menu">
                 <MenuIcon fontSize="large" color="#000000" />
               </Tooltip>
@@ -60,7 +60,7 @@ function Nav() {
           <div className="icons">
             <ul>
               <li>
-                <a href={"/"} ></a>
+                <a href={"/"} alt={"test"}></a>
               </li>
               <li>
                 <a href={"/"}>
